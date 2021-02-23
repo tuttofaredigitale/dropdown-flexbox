@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Montserrat Alternates';
+  font-size: 65px;
+}
+section {
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+#main-nav{
+  width: 100%;
+  justify-content: space-between;
+}
+
+#main-nav a {
+  color: #fff100;
+  background: #000000;
+  height: 64px;
+  font-family: 'Montserrat Alternates';
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+
+#main-nav a:hover {
+  background: #3d3d3d;
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  flex: 3;
+}
+
+#main-nav li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 0px;
+}
+
+.arrow {
+  margin-left: 8px;
+  color: #eee;
+  font-size: 12px;
+}
+
+.submenu li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+  display: block;
+}
+
+.submenu-2 li {
+  display: none;
+}
+.submenu-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 120px;
+}
+
+@media all and (max-width: 800px) { 
+#main-nav ul { flex-wrap: wrap; }
+#main-nav li { flex: 1 1 50%; } 
+}
