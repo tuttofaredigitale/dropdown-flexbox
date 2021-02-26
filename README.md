@@ -1,5 +1,5 @@
 # dropdown-flexbox
-[ITA]
+[ITA]<br>
 Dropdown menu creato utilizzando flexbox, solo CSS e HTML.
 
 [ENG]<br>
